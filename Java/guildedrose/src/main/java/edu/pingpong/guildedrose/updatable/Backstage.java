@@ -8,16 +8,16 @@ public class Backstage extends NormalItem {
 
     @Override
     public void updateQuality() {
-        setSellIn(-1);
+        setSellIn();
         computeQuality(1);
-        if (getSellIn() < 11) {
+        if (getItem().getSell_in() < 11) {
             computeQuality(1);
         }
-        if (getSellIn() < 6) {
+        if (getItem().getSell_in() < 6) {
             computeQuality(1);
         }
-        if (getSellIn() <= 0) {
-            computeQuality(-getQuality());
+        if (getItem().getSell_in() <= 0) {
+            computeQuality(-getItem().getQuality());
         }
     }
 

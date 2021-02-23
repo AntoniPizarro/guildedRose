@@ -8,10 +8,10 @@ public class Sulfuras extends NormalItem{
 
     @Override
     public void updateQuality() {
-        while (getQuality() < 80) {
+        while (getItem().getQuality() < 80) {
             computeQuality(1);
         }
-        while (getQuality() > 80) {
+        while (getItem().getQuality() > 80) {
             computeQuality(-1);
         }
     }
