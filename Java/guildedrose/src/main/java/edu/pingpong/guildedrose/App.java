@@ -8,7 +8,7 @@ public class App {
 
         System.out.println("Bienvenido a Ollivanders!");
 
-        GildedRose shop = new GildedRose();
+        GuildedRose shop = new GuildedRose();
 
         /**
          * Tedious but necessary, Ollivanders types the 
