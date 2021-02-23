@@ -1,0 +1,1 @@
+package edu.pingpong.guildedrose.updatable;
