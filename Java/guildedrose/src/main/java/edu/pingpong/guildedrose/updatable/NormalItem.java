@@ -49,6 +49,6 @@ public class NormalItem implements Updatable {
     }
 
     public String toString() {
-        return "Name: " + item.getName() + "\n Sell in: " + item.getSell_in() + "\nQuality: " + item.getQuality();
+        return "Name: " + item.getName() + "\n Sell in: " + item.getSell_in() + "\nQuality: " + item.getQuality() + "\n";
     }
 }
