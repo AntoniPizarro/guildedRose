@@ -1,6 +1,6 @@
 package edu.pingpong.guildedrose.updatable;
 
-public class NormalItem extends Item implements Updatable {
+public class NormalItem implements Updatable {
 
     private String name;
     private int sellIn;
@@ -21,11 +21,20 @@ public class NormalItem extends Item implements Updatable {
     }
 
     void setSellIn(int sellIn) {
-        this.sellIn = sellIn;
+        this.sellIn += sellIn;
     }
 
     public int getQuality() {
         return this.quality;
+    }
+
+    void computeQuality(int qty) {
+        this.quality += qty;
+    }
+    @Override
+    public void updateQuality() {
+        setSellIn(-1);
+        computeQuality(-1);
     }
 
     public String toString() {
